@@ -1,1 +1,10 @@
 # ZidanAliZaqi_MapReduce
+
+#Instalasi java
+Mengonfigurasi lingkungan Linux untuk pengembangan dengan menginstal OpenJDK 8, mengatur versi Java yang digunakan, dan memulai server SSH untuk akses tanpa kata sandi. Selanjutnya, script tersebut mendownload dan menginstal Hadoop 3.2.3, menyesuaikan konfigurasinya untuk menggunakan JDK yang diinstal, dan mengatur variabel lingkungan yang diperlukan untuk menjalankan Hadoop. Proses ini mempersiapkan sistem untuk pengembangan dan pengujian aplikasi yang berbasis Hadoop, mengintegrasikan penyimpanan data dan pemrosesan terdistribusi.
+
+#Konfigurasi File HDFS
+menginisialisasi kluster Hadoop dengan memformat NameNode untuk mempersiapkan Sistem File Terdistribusi Hadoop (HDFS) dan mengatur variabel lingkungan untuk mendefinisikan hak akses pengguna untuk berbagai daemon Hadoop. Kemudian, skrip meluncurkan layanan HDFS penting, termasuk NameNode dan DataNode, diikuti dengan memulai layanan YARN yang mengelola alokasi sumber daya dan penjadwalan pekerjaan di seluruh kluster. Akhirnya, skrip memverifikasi operasi layanan ini dengan mencantumkan proses Java yang aktif, mengonfirmasi bahwa komponen ekosistem Hadoop berjalan seperti yang diharapkan. Pengaturan ini memungkinkan fungsionalitas penyimpanan dan pemrosesan terdistribusi yang diperlukan untuk menangani set data besar secara efisien.
+
+#Memastikan File Hadoop Tersedia
+Untuk menghasilkan laporan mengenai informasi dasar dan statistik dari sistem file Hadoop Distributed File System (HDFS). Perintah `hdfs dfsadmin -report` yang dijalankan dari direktori instalasi Hadoop (ditunjukkan oleh variabel `$HADOOP_HOME`) memberikan rincian seperti jumlah dan kondisi DataNodes, kapasitas total dan tersedia, serta penggunaan blok dan replikasi dalam kluster HDFS. Laporan ini penting untuk pemantauan kesehatan dan manajemen kapasitas dari kluster Hadoop.
